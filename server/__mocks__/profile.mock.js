@@ -3,11 +3,11 @@ import Profile from '../models/profile';
 export default function () {
   Profile.count().exec((err, count) => {
     if (err) {
-      console.log('RESUMANE DB: Error getting mock profile count: ');
+      console.log('MERN Scaffold DB: Error getting mock profile count: ');
       console.log(error);
     }
     if (count > 0) {
-      console.log(`RESUMANE DB: ${count} mock profiles exist.`);
+      console.log(`MERN Scaffold DB: ${count} mock profiles exist.`);
       return;
     }
 
@@ -38,9 +38,9 @@ export default function () {
 
     Profile.create(profiles, (error) => {
       if (!error) {
-        console.log(`RESUMANE DB: ${profiles.length} mock profiles created.`);
+        console.log(`MERN Scaffold DB: ${profiles.length} mock profiles created.`);
       } else {
-        console.log('RESUMANE DB: Error creating mock profiles: ');
+        console.log('MERN Scaffold DB: Error creating mock profiles: ');
         console.log(error);
       }
     });

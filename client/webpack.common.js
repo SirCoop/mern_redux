@@ -16,14 +16,14 @@ const CleanwebpackPluginConfig = new CleanwebpackPlugin(['dist']);
 module.exports = {
   entry: `${__dirname}/src/index.js`,
   output: {
-    filename: 'resumane_bundle-[hash].js',
+    filename: 'MERN Scaffold_bundle-[hash].js',
     path: `${__dirname}/dist`,
     publicPath: '/',
   },
   plugins: [
     HtmlwebpackPluginConfig,
     CleanwebpackPluginConfig,
-    new ExtractPlugin('resumane_bundle-[hash].css'),
+    new ExtractPlugin('MERN Scaffold_bundle-[hash].css'),
   ],
   module: {
     rules: [

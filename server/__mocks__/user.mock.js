@@ -3,11 +3,11 @@ import User from '../models/user';
 export default function () {
   User.count().exec((err, count) => {
     if (err) {
-      console.log('RESUMANE DB: Error getting mock user count: ');
+      console.log('MERN Scaffold DB: Error getting mock user count: ');
       console.log(error);
     }
     if (count > 0) {
-      console.log(`RESUMANE DB: ${count} mock users exist.`);
+      console.log(`MERN Scaffold DB: ${count} mock users exist.`);
       return;
     }
 
@@ -42,9 +42,9 @@ export default function () {
 
     User.create(users, (error) => {
       if (!error) {
-        console.log(`RESUMANE DB: ${users.length} mock users created.`);
+        console.log(`MERN Scaffold DB: ${users.length} mock users created.`);
       } else {
-        console.log('RESUMANE DB: Error creating mock users: ');
+        console.log('MERN Scaffold DB: Error creating mock users: ');
         console.log(error);
       }
     });

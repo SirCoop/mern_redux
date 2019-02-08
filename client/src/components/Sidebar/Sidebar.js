@@ -120,7 +120,7 @@ const Sidebar = props => {
       cn({ [classes.sideBarIsOpen]: isSidebarOpen,
       }))
     }>
-      <div className={classes.profile}>Resumane</div>
+      <div className={classes.profile}>MERN Scaffold</div>
       {mapLinksToNavLinks(props)(classes)(links)}
       <div className={classes.arrowForward}>
         <Button onClick={onToggleSidebar} className={classes.forwardButton}>
